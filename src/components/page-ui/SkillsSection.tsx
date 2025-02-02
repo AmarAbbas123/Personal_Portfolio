@@ -1,7 +1,13 @@
 import Link from "next/link";
 import React from "react";
 import { FaWordpress, FaReact } from "react-icons/fa";
-import { SiMysql, SiJavascript, SiTailwindcss } from "react-icons/si";
+import {
+  SiMysql,
+  SiJavascript,
+  SiTypescript,
+  SiTailwindcss,
+  SiBootstrap,
+} from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
 import { EvervaultCard, Icon } from "@/components/ui/evervault-card";
@@ -41,6 +47,26 @@ export function SkillsSection() {
 
 const skills = [
   {
+    title: "Tailwind",
+    link: "https://tailwindcss.com",
+    icon: <SiTailwindcss />,
+  },
+  {
+    title: "BootStrap",
+    link: "https://getbootstrap.com/",
+    icon: <SiBootstrap />,
+  },
+  {
+    title: "JavaScript",
+    link: "https://www.javascript.com/",
+    icon: <SiJavascript />,
+  },
+  {
+    title: "TypeScript",
+    link: "https://www.typescriptlang.org/",
+    icon: <SiTypescript />,
+  },
+  {
     title: "React.js",
     link: "https://react.dev/",
     icon: <FaReact />,
@@ -50,21 +76,13 @@ const skills = [
     link: "https://nextjs.org",
     icon: <TbBrandNextjs />,
   },
-  {
-    title: "Tailwind",
-    link: "https://tailwindcss.com",
-    icon: <SiTailwindcss />,
-  },
+
   {
     title: "WordPress",
     link: "https://wordpress.com/",
     icon: <FaWordpress />,
   },
-  {
-    title: "JavaScript",
-    link: "https://www.javascript.com/",
-    icon: <SiJavascript />,
-  },
+
   {
     title: "MySQL",
     link: "https://www.mysql.com/",
