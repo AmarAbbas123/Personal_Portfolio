@@ -44,26 +44,49 @@ const experience = [
           manage site audits.
         </li>
         <li>
-          Contributed to the development of a web applicatigion by implementing
-          a new app theme and developing various frontend components.
+          Built and styled reusable front-end components to ensure a clean and
+          intuitive user interface.
+        </li>
+        <li>
+          Focused on responsive design, optimizing the user experience across
+          various screen sizes and devices.
+        </li>
+        <li>
+          Created a modern and cohesive UI theme to align with usability and
+          accessibility best practices.
+        </li>
+        <li>
+          Worked independently on the front-end architecture, applying best
+          practices in code organization and maintainability.
         </li>
       </ul>
     ),
-    badge: "Junior Software Engineer/Oct 2023 - Present",
+    badge: "Junior Software Engineer/Aug 2024 - Present",
   },
   {
     title: "Alilogics",
     description: (
       <ul className="list-disc">
-        <li>Joined Alilogics as a Junior Frontend Developer.</li>
         <li>
-          Developed and customized a wide range of WordPress projects, including
-          theme customization, Elementor-based designs, and WooCommerce
-          integrations, tailored to meet diverse client requirements and
-          expectations.
+          Joined Alilogics as a fresh graduate, quickly adapting to the
+          company's culture of quality work and teamwork
+        </li>
+        <li>
+          Contributed to the development of Secure Site Audit system, a web
+          portal-based project management console designed to define, manage,
+          track, and report project status with consistent quality and timely
+          delivery.
+        </li>
+        <li>
+          Developed and optimized responsive front-end components to ensure
+          seamless user experience across devices.
+        </li>
+        <li>
+          Collaborated with the team to implement a modern UI theme, focusing on
+          usability, accessibility, and performance.
         </li>
       </ul>
     ),
-    badge: "Frontend Developer/June 2023 – Present",
+    badge: "Frontend Developer/Aug 2024 – Present",
   },
 ];
