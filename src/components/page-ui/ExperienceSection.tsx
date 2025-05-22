@@ -41,50 +41,39 @@ const experience = [
     description: (
       <ul className="list-disc">
         <li>
-          Developed a secure web portal-based project management console to
-          manage site audits.
+          Developed a secure web portal for project management to streamline site audits.
         </li>
         <li>
-          Built and styled reusable front-end components to ensure a clean and
-          intuitive user interface.
+          Built and styled reusable front-end components, ensuring a clean and intuitive UI.
         </li>
         <li>
-          Focused on responsive design, optimizing the user experience across
-          various screen sizes and devices.
+          Focused on responsive design to optimize user experience across devices and screen sizes.
         </li>
         <li>
-          Created a modern and cohesive UI theme to align with usability and
-          accessibility best practices.
+          Created a modern and cohesive UI theme aligned with usability and accessibility standards.
         </li>
         <li>
-          Worked independently on the front-end architecture, applying best
-          practices in code organization and maintainability.
+          Independently led front-end architecture, applying best practices for code structure and maintainability.
         </li>
       </ul>
     ),
-    badge: 'Junior Software Engineer / Aug 2024 - Present',
+    badge: 'Junior Software Engineer / Aug 2024 – Present',
   },
   {
     title: 'Alilogics',
     description: (
       <ul className="list-disc">
         <li>
-          Joined Alilogics as a fresh graduate, quickly adapting to the
-          company's culture of quality work and teamwork.
+          Joined as a fresh graduate and quickly adapted to the company's culture of quality and teamwork.
         </li>
         <li>
-          Contributed to the development of Secure Site Audit system, a web
-          portal-based project management console designed to define, manage,
-          track, and report project status with consistent quality and timely
-          delivery.
+          Contributed to the development of the Secure Site Audit system—a web portal for managing and tracking project status with consistent quality and timely delivery.
         </li>
         <li>
-          Developed and optimized responsive front-end components to ensure
-          seamless user experience across devices.
+          Developed and optimized responsive front-end components for a seamless cross-device experience.
         </li>
         <li>
-          Collaborated with the team to implement a modern UI theme, focusing on
-          usability, accessibility, and performance.
+          Collaborated with the team to implement a modern UI theme with a focus on usability, accessibility, and performance.
         </li>
       </ul>
     ),
