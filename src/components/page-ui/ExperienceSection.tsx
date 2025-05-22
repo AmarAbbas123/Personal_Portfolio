@@ -51,23 +51,7 @@ const experience = [
         ),
         badge: 'Frontend Developer/June 2023 – Present'
     },
-    {
-        title: 'SOFTOO (Internship)',
-        description: (
-            <ul className="list-disc">
-                <li>
-                    Completed a MERN Stack Bootcamp at Softoo, gaining practical experience in building full-stack applications with MongoDB,
-                    Express.js, React, and Node.js
-                </li>
-                <li>Developed a web app to connect patients with doctors for online appointments</li>
-                <li>
-                    Implemented features for booking, rescheduling, and managing appointments. Integrated secure communication channels and real- time
-                    notifications for efficient management.
-                </li>
-            </ul>
-        ),
-        badge: 'MERN Stack Trainee/Sep 2022 - Nov 2022'
-    },
+    
     {
         title: 'K2X Tech (Intenship)',
         description: (
