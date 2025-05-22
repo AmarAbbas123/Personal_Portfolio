@@ -1,8 +1,8 @@
-"use client";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+'use client';
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import React, { useEffect, useRef, useState } from 'react';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 export const TracingBeam = ({
   children,
@@ -14,7 +14,7 @@ export const TracingBeam = ({
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"],
+    offset: ['start start', 'end start'],
   });
 
   const contentRef = useRef<HTMLDivElement>(null);
@@ -31,20 +31,20 @@ export const TracingBeam = ({
     {
       stiffness: 500,
       damping: 90,
-    },
+    }
   );
   const y2 = useSpring(
     useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]),
     {
       stiffness: 500,
       damping: 90,
-    },
+    }
   );
 
   return (
     <motion.div
       ref={ref}
-      className={cn("relative w-full max-w-4xl mx-auto h-full", className)}
+      className={cn('relative w-full max-w-4xl mx-auto h-full', className)}
     >
       <div className="absolute -left-4 top-3 md:-left-20">
         <motion.div
@@ -55,8 +55,8 @@ export const TracingBeam = ({
           animate={{
             boxShadow:
               scrollYProgress.get() > 0
-                ? "none"
-                : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+                ? 'none'
+                : 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
           }}
           className="border-netural-200 ml-[27px] flex size-4 items-center justify-center rounded-full border shadow-sm"
         >
@@ -67,9 +67,9 @@ export const TracingBeam = ({
             }}
             animate={{
               backgroundColor:
-                scrollYProgress.get() > 0 ? "white" : "var(--emerald-500)",
+                scrollYProgress.get() > 0 ? 'white' : 'var(--emerald-500)',
               borderColor:
-                scrollYProgress.get() > 0 ? "white" : "var(--emerald-600)",
+                scrollYProgress.get() > 0 ? 'white' : 'var(--emerald-600)',
             }}
             className="size-2 rounded-full  border border-neutral-300 bg-white"
           />

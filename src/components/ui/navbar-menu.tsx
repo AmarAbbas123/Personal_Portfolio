@@ -1,11 +1,11 @@
-"use client";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+'use client';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
 
 const transition = {
-  type: "spring",
+  type: 'spring',
   mass: 0.5,
   damping: 11.5,
   stiffness: 100,

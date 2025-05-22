@@ -1,24 +1,24 @@
-"use client";
+'use client';
 
-import Link from "next/link";
+import Link from 'next/link';
 
-import { BackgroundBeams } from "@/components/ui/background-beams";
-import { Button } from "@/components/ui/button";
-import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
+import { BackgroundBeams } from '@/components/ui/background-beams';
+import { Button } from '@/components/ui/button';
+import { TypewriterEffectSmooth } from '@/components/ui/typewriter-effect';
 
 const words = [
   {
-    text: "JavaScript",
+    text: 'JavaScript',
   },
   {
-    text: "and",
+    text: 'and',
   },
   {
-    text: "React/Next.js",
+    text: 'React/Next.js',
   },
   {
-    text: "developer",
-    className: "text-blue-500 dark:text-blue-500",
+    text: 'developer',
+    className: 'text-blue-500 dark:text-blue-500',
   },
 ];
 
@@ -30,7 +30,7 @@ export function LandingPage() {
     >
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)] dark:bg-black" />
       <p className="text-xs text-neutral-600 dark:text-neutral-200 sm:text-base  ">
-        {" "}
+        {' '}
         Hello, I&apos;m Amar Abbas. A passionate Software Engineer.
       </p>
       <TypewriterEffectSmooth words={words} />

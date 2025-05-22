@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import { zodResolver } from "@hookform/resolvers/zod";
-import React from "react";
-import { useForm } from "react-hook-form";
-import { toast } from "sonner";
-import { z } from "zod";
+import { zodResolver } from '@hookform/resolvers/zod';
+import React from 'react';
+import { useForm } from 'react-hook-form';
+import { toast } from 'sonner';
+import { z } from 'zod';
 
-import { sendContactForm } from "@/app/actions";
-import { Button } from "@/components/ui/button";
+import { sendContactForm } from '@/app/actions';
+import { Button } from '@/components/ui/button';
 import {
   Form,
   FormControl,
@@ -15,23 +15,23 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 
 export const contactFormSchema = z.object({
   name: z
-    .string({ required_error: "Name is requred." })
+    .string({ required_error: 'Name is requred.' })
     .trim()
-    .min(2, "Please enter a valid name.")
+    .min(2, 'Please enter a valid name.')
     .max(50),
   email: z
-    .string({ required_error: "Email is requred." })
-    .email("Must be a valid email address."),
+    .string({ required_error: 'Email is requred.' })
+    .email('Must be a valid email address.'),
   message: z
     .string()
     .trim()
-    .min(20, "Please enter a message containing at least 20 characters.")
+    .min(20, 'Please enter a message containing at least 20 characters.')
     .max(500),
 });
 
@@ -41,9 +41,9 @@ export function ContactMeForm() {
   const form = useForm<z.infer<typeof contactFormSchema>>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
-      name: "",
-      email: "",
-      message: "",
+      name: '',
+      email: '',
+      message: '',
     },
   });
 
@@ -53,10 +53,10 @@ export function ContactMeForm() {
 
       if (response.success) {
         form.reset();
-        toast("Your message has been sent successfully.");
+        toast('Your message has been sent successfully.');
       } else {
         toast(
-          "An error occurred while sending your message. Please try again later.",
+          'An error occurred while sending your message. Please try again later.'
         );
       }
       form.reset();

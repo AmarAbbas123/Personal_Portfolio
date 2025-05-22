@@ -1,7 +1,7 @@
 import {
   contactFormSchema,
   ContactFormSchemaType,
-} from "@/components/page-ui/ContactMe";
+} from '@/components/page-ui/ContactMe';
 
 type ActionResponse =
   | { success: true }
@@ -13,7 +13,7 @@ type ActionResponse =
     };
 
 export async function sendContactForm(
-  values: ContactFormSchemaType,
+  values: ContactFormSchemaType
 ): Promise<ActionResponse> {
   const validateFields = contactFormSchema.safeParse(values);
 
@@ -21,7 +21,7 @@ export async function sendContactForm(
     return {
       success: false,
       error: {
-        message: validateFields.error.issues[0]?.message || "Unknown error",
+        message: validateFields.error.issues[0]?.message || 'Unknown error',
       },
     };
   }
@@ -31,13 +31,13 @@ export async function sendContactForm(
   Object.keys(values).forEach((key) => {
     formData.append(key, values[key as keyof typeof values]);
   });
-  const url = new URL("https://formspree.io/f/mvoerlqv");
+  const url = new URL('https://formspree.io/f/mvoerlqv');
 
   const response = await fetch(url, {
-    method: "POST",
+    method: 'POST',
     body: formData,
     headers: {
-      Accept: "application/json",
+      Accept: 'application/json',
     },
   });
 
@@ -46,7 +46,7 @@ export async function sendContactForm(
       success: false,
       error: {
         message:
-          "Something wrong happened and we were not able to save send contact form data.",
+          'Something wrong happened and we were not able to save send contact form data.',
       },
     };
   }
