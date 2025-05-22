@@ -52,14 +52,5 @@ const experience = [
         badge: 'Frontend Developer/June 2023 – Present'
     },
     
-    {
-        title: 'K2X Tech (Intenship)',
-        description: (
-            <ul className="list-disc">
-                <li>Delivered a variety of mobile development projects, meeting diverse client requirements and expectations.</li>
-                <li>Worked extensively with React, and vanilla JavaScript to develop robust and scalable mobile applications</li>
-            </ul>
-        ),
-        badge: 'Frontend Development/June 2022 - Aug 2022'
-    }
+   
 ];
