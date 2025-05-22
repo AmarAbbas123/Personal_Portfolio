@@ -1,8 +1,9 @@
-"use client";
-import React from "react";
-import { twMerge } from "tailwind-merge";
+'use client';
 
-import { TracingBeam } from "@/components/ui/tracing-beams";
+import React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+import { TracingBeam } from '@/components/ui/tracing-beams';
 
 export function ExperienceSection() {
   return (
@@ -17,7 +18,7 @@ export function ExperienceSection() {
         <div className="relative mx-auto max-w-2xl pb-32 pt-4 text-white antialiased">
           {experience.map((item, index) => (
             <div key={`content-${index}`} className="mb-10 mt-4 md:mt-0">
-              <h2 className={twMerge("text-xl text-black dark:text-white")}>
+              <h2 className={twMerge('text-xl text-black dark:text-white')}>
                 {item.title}
               </h2>
               <span className="w-fit rounded-full py-1 text-sm italic text-neutral-800 dark:text-neutral-200">
@@ -36,7 +37,7 @@ export function ExperienceSection() {
 
 const experience = [
   {
-    title: "Secure Site Audit",
+    title: 'Secure Site Audit',
     description: (
       <ul className="list-disc">
         <li>
@@ -61,15 +62,15 @@ const experience = [
         </li>
       </ul>
     ),
-    badge: "Junior Software Engineer/Aug 2024 - Present",
+    badge: 'Junior Software Engineer / Aug 2024 - Present',
   },
   {
-    title: "Alilogics",
+    title: 'Alilogics',
     description: (
       <ul className="list-disc">
         <li>
           Joined Alilogics as a fresh graduate, quickly adapting to the
-          company's culture of quality work and teamwork
+          company's culture of quality work and teamwork.
         </li>
         <li>
           Contributed to the development of Secure Site Audit system, a web
@@ -87,6 +88,6 @@ const experience = [
         </li>
       </ul>
     ),
-    badge: "Frontend Developer/Aug 2024 – Present",
+    badge: 'Frontend Developer / Aug 2024 – Present',
   },
 ];
